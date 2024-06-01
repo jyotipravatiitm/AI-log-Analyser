@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 } catch (error) {
-  console.error('Error:', error);
+  console.error('Error:', error, promptData);
   resultDiv.innerHTML = `
     <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
       <strong class="font-bold">Error:</strong>
