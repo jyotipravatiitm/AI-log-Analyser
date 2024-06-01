@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>CSV Upload and Claude API</title>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4">CSV Upload and Claude API</h1>
+    <div class="mb-4">
+      <label for="csvFile" class="block mb-2">Select a CSV file:</label>
+      <input type="file" id="csvFile" class="border border-gray-300 p-2 rounded">
+    </div>
+    <div class="mb-4">
+      <label for="topPrompt" class="block mb-2">Top Prompt:</label>
+      <textarea id="topPrompt" rows="3" class="w-full border border-gray-300 p-2 rounded"></textarea>
+    </div>
+    <div class="mb-4">
+      <label for="bottomPrompt" class="block mb-2">Bottom Prompt:</label>
+      <textarea id="bottomPrompt" rows="3" class="w-full border border-gray-300 p-2 rounded"></textarea>
+    </div>
+    <button id="submitBtn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Submit</button>
+    <div id="result" class="mt-8"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
