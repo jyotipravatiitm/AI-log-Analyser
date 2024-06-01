@@ -1,9 +1,12 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const csvFileInput = document.getElementById('csvFile');
     const topPromptInput = document.getElementById('topPrompt');
     const bottomPromptInput = document.getElementById('bottomPrompt');
     const resultDiv = document.getElementById('result');
+
+    
   
     submitBtn.addEventListener('click', async () => {
       const file = csvFileInput.files[0];
