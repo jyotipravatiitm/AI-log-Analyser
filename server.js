@@ -3,7 +3,7 @@ const Anthropic = require('@anthropic-ai/sdk');
 const bodyParser = require('body-parser');
 
 const app = express();
-const anthropic = new Anthropic({ apiKey: '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' });
+const anthropic = new Anthropic({ apiKey: process.env.API_KEY });
 
 app.use(bodyParser.json());
 
