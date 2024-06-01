@@ -4,8 +4,11 @@ const Anthropic = require('@anthropic-ai/sdk');
 const bodyParser = require('body-parser');
 
 const app = express();
-const anthropic = new Anthropic({ apiKey: process.env.API_KEY });
+console.log("Entered in to the  file");
 console.log(process.env.API_KEY); 
+const anthropic = new Anthropic({ apiKey: process.env.API_KEY });
+console.log("Entered in to the  file");
+
 
 app.use(bodyParser.json());
 
