@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const anthropic = new Anthropic({ apiKey: process.env.API_KEY });
+console.log(process.env.API_KEY); 
 
 app.use(bodyParser.json());
 
